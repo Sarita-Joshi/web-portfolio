@@ -1,0 +1,53 @@
+/* Add CSS to style the ImageGrid component */
+.image-grid-container {
+    max-width: 100%; /* Adjust the maximum width as needed */
+    overflow-x: auto; /* Add horizontal scroll if necessary when the container overflows */
+  }
+
+.scrollable-content {
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+  gap: 16px; /* Adjust the gap between images as needed */
+  justify-items: center;
+}
+
+.image-item {
+  text-align: center;
+}
+
+.image-title {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.grid-image {
+  width: auto; /* Adjust the maximum width as needed */
+  height: 300px; /* Adjust the maximum height as needed */
+  /* You can also add other styling properties like margin, padding, etc. */
+}
+
+
+/* styles.css */
+.new_image_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Dynamic columns */
+  gap: 16px; /* Adjust the gap between images */
+  overflow-x: auto;
+}
+
+.new_image_div {
+  /* Style individual images as needed */
+  height: 100px;
+  width: 100%;
+}
+
+.new_image_item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
